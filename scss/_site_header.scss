@@ -1,3 +1,84 @@
 .site_header {
     background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 10px;
+}
+
+body > input[type="checkbox"] {
+    position: absolute;
+    top: 0%;
+    right: 10%;
+}
+
+h1 {
+    width: 200px;
+}
+
+.site_header__label {
+    background-image: url('../images/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1,5rem;
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    width: 2rem;
+    height: 2rem;
+    text-indent: -9999px;
+}
+
+.navigation {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(-100px);
+}
+
+.navigation ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigation ul li + li {
+    padding-top: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-family: 'Public Sans';
+    font-size: 18px;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    font-style: normal;
+}
+
+body > input[type="checkbox"]:checked ~ header .navigation {
+    background-image: linear-gradient(180deg, hsla(233, 26%, 24%, 1) 0%,hsla(220, 16%, 96%, 0.2) 50%);
+    transform: translate(0px);
+    top: 100%;
+    left: 0%;
+    padding: 42px;
+    background-color: rgba(150, 152, 166, 0.2);
+    height: 100vh;
+    width: 275px;
+}
+
+body > input[type="checkbox"]:checked ~ header .navigation ul {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px 60px;
+}
+
+body > input[type="checkbox"]:checked ~ header .site_header__label {
+    background-image: url('../images/icon-close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1,5rem;
 }

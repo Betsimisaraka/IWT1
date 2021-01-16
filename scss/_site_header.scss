@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 42px;
-    padding-bottom: 10px;
+    padding-bottom: 32px;
 }
 
 body > input[type="checkbox"] {
@@ -17,6 +17,13 @@ body > input[type="checkbox"] {
 
 h1 {
     width: 200px;
+    background-image: url('../images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    top: 35%;
 }
 
 .site_header__label {
@@ -37,26 +44,23 @@ h1 {
     position: absolute;
     top: 0%;
     left: 10%;
-    transform: translate(-100px);
-}
-
-.navigation ul li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navigation ul li + li {
-    padding-top: 20px;
-}
-
-.navigation ul li a {
-    text-decoration: none;
-    font-family: 'Public Sans';
-    font-size: 18px;
-    font-weight: 400;
-    color: hsl(233, 26%, 24%);
-    font-style: normal;
+    transform: translate(-150px);
+    & ul li {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        & a {
+            text-decoration: none;
+            font-family: 'Public Sans';
+            font-size: 18px;
+            font-weight: 400;
+            color: hsl(233, 26%, 24%);
+            font-style: normal;
+        }
+    }
+    & ul li + li {
+        padding-top: 20px;
+    }
 }
 
 body > input[type="checkbox"]:checked ~ header .navigation {
@@ -81,4 +85,43 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 1,5rem;
+}
+
+.site_header__button {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        position: unset;
+        top: unset;
+    }
+    .site_header__label {
+        display: none;
+    }
+    .navigation {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        & ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            & li a {
+                color:hsl(233, 8%, 62%);
+            }
+            li a:hover {
+                color: hsl(233, 26%, 24%);
+            }
+        }
+        & ul li + li {
+            padding-top: unset;
+            margin-left: 50px;
+        }
+    }
+    .site_header__button {
+        display: block;
+    }
 }

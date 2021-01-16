@@ -57,9 +57,10 @@ ul {
     border-radius: 25px;
 }
 
-h1, h5 {
+h5 {
     background-image: url('../images/logo.svg');
     background-repeat: no-repeat;
+    background-position: center;
     display: block;
     text-indent: -9999px;
 }

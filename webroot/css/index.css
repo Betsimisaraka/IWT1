@@ -48,9 +48,10 @@ ul {
   padding: 12px 30px;
   border-radius: 25px; }
 
-h1, h5 {
+h5 {
   background-image: url("../images/logo.svg");
   background-repeat: no-repeat;
+  background-position: center;
   display: block;
   text-indent: -9999px; }
 
@@ -62,7 +63,7 @@ h1, h5 {
   align-items: center;
   justify-content: space-between;
   padding-top: 42px;
-  padding-bottom: 10px; }
+  padding-bottom: 32px; }
 
 body > input[type="checkbox"] {
   position: absolute;
@@ -70,7 +71,14 @@ body > input[type="checkbox"] {
   right: 10%; }
 
 h1 {
-  width: 200px; }
+  width: 200px;
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  text-indent: -9999px;
+  position: absolute;
+  top: 35%; }
 
 .site_header__label {
   background-image: url("../images/icon-hamburger.svg");
@@ -89,23 +97,20 @@ h1 {
   position: absolute;
   top: 0%;
   left: 10%;
-  transform: translate(-100px); }
-
-.navigation ul li {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.navigation ul li + li {
-  padding-top: 20px; }
-
-.navigation ul li a {
-  text-decoration: none;
-  font-family: 'Public Sans';
-  font-size: 18px;
-  font-weight: 400;
-  color: #2d314d;
-  font-style: normal; }
+  transform: translate(-150px); }
+  .navigation ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .navigation ul li a {
+      text-decoration: none;
+      font-family: 'Public Sans';
+      font-size: 18px;
+      font-weight: 400;
+      color: #2d314d;
+      font-style: normal; }
+  .navigation ul li + li {
+    padding-top: 20px; }
 
 body > input[type="checkbox"]:checked ~ header .navigation {
   background-image: linear-gradient(180deg, #2d314d 0%, rgba(243, 244, 246, 0.2) 50%);
@@ -127,6 +132,35 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1,5rem; }
+
+.site_header__button {
+  display: none; }
+
+@media (min-width: 1000px) {
+  h1 {
+    position: unset;
+    top: unset; }
+  .site_header__label {
+    display: none; }
+  .navigation {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset; }
+    .navigation ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+      .navigation ul li a {
+        color: #9698a6; }
+      .navigation ul li a:hover {
+        color: #2d314d; }
+    .navigation ul li + li {
+      padding-top: unset;
+      margin-left: 50px; }
+  .site_header__button {
+    display: block; } }
 
 .mastheader {
   background-color: #fafafa; }

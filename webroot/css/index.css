@@ -1,0 +1,75 @@
+html {
+  font-family: 'Public Sans', serif, sans-serif;
+  font-size: 18px;
+  background-color: #fafafa; }
+
+body {
+  text-align: center; }
+
+body, p, h1, h2, h3, h4, h5, ul {
+  margin: 0;
+  padding: 0; }
+
+.mastheader_paragraph, .easybank_paragraph, .articles_paragraph {
+  font-family: 'Public Sans';
+  font-weight: 400;
+  color: #9698a6;
+  font-style: normal; }
+
+h3 {
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 2rem;
+  color: #2d314d; }
+
+h4 {
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 22px;
+  color: #2d314d;
+  font-style: normal; }
+
+ul {
+  list-style: none; }
+
+.articles_author {
+  font-family: 'Public Sans';
+  font-weight: 300;
+  color: #9698a6;
+  font-style: normal; }
+
+.request {
+  background-image: linear-gradient(50deg, #31d35c 0%, #2bb7da 100%);
+  border: none;
+  font-family: 'Public Sans';
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  font-style: normal;
+  padding: 12px 30px;
+  border-radius: 25px; }
+
+h1, h5 {
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px; }
+
+.site_header {
+  background-color: #ffffff; }
+
+.mastheader_heading {
+  font-family: 'Public Sans';
+  font-size: 2rem;
+  color: #2d314d;
+  font-style: normal;
+  font-weight: 700; }
+
+.easybank {
+  background-color: royalblue; }
+
+.articles {
+  background-color: salmon; }
+
+footer {
+  background-color: seagreen; }

@@ -12,8 +12,19 @@ body, p, h1, h2, h3, h4, h5, ul {
     padding: 0;
 }
 
+// body {
+//    margin-left: 22px;
+//    margin-right: 22px;
+// }
+
+// .container {
+    
+// }
+
 .mastheader_paragraph, .easybank_paragraph, .articles_paragraph {
     font-family: 'Public Sans';
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
     color: hsl(233, 8%, 62%);
     font-style: normal;
@@ -21,16 +32,19 @@ body, p, h1, h2, h3, h4, h5, ul {
 
 h3 {
     font-family: 'Public Sans';
-    font-weight: 700;
-    font-size: 2rem;
-    color: hsl(233, 26%, 24%);
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 48px;
+    color: hsla(233, 26%, 24%, 0.8);
 }
 
 h4 {
     font-family: 'Public Sans';
-    font-weight: 700;
-    font-size: 22px;
-    color: hsl(233, 26%, 24%);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 34px;
+    color: hsla(233, 26%, 24%, 0.8);
+    // color: hsl(233, 8%, 62%);
     font-style: normal;
 }
 
@@ -41,6 +55,8 @@ ul {
 .articles_author {
     font-family: 'Public Sans';
     font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
     color: hsl(233, 8%, 62%);
     font-style: normal;
 }
@@ -50,6 +66,7 @@ ul {
     border: none;
     font-family: 'Public Sans';
     font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
     color: hsl(0, 0%, 100%);
     font-style: normal;

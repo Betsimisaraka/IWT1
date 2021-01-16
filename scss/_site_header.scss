@@ -53,6 +53,7 @@ h1 {
             text-decoration: none;
             font-family: 'Public Sans';
             font-size: 18px;
+            line-height: 22px;
             font-weight: 400;
             color: hsl(233, 26%, 24%);
             font-style: normal;
@@ -92,6 +93,9 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
 }
 
 @media (min-width: 1000px) {
+    .site_header {
+        padding-bottom: 20px;
+    }
     h1 {
         position: unset;
         top: unset;

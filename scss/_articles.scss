@@ -1,3 +1,49 @@
 .articles {
     background-color: hsl(0, 0%, 98%);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.articles_heading {
+    padding-bottom: 32px;
+}
+
+.articles_author {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.articles_subheading {
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.articles_paragraph {
+    padding-bottom: 52px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.articles_lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    & li + li {
+        margin-top: 22px;
+    }
+    & li {
+        background-color: #ffffff;
+        margin-left: 22px;
+        margin-right: 22px;
+        text-align: left;
+        border-radius: 0px 0px 10px 10px;
+        & img {
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
 }

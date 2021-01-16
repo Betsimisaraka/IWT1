@@ -11,21 +11,25 @@ body, p, h1, h2, h3, h4, h5, ul {
 
 .mastheader_paragraph, .easybank_paragraph, .articles_paragraph {
   font-family: 'Public Sans';
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 400;
   color: #9698a6;
   font-style: normal; }
 
 h3 {
   font-family: 'Public Sans';
-  font-weight: 700;
-  font-size: 2rem;
-  color: #2d314d; }
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 48px;
+  color: rgba(45, 49, 77, 0.8); }
 
 h4 {
   font-family: 'Public Sans';
-  font-weight: 700;
-  font-size: 22px;
-  color: #2d314d;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 34px;
+  color: rgba(45, 49, 77, 0.8);
   font-style: normal; }
 
 ul {
@@ -34,6 +38,8 @@ ul {
 .articles_author {
   font-family: 'Public Sans';
   font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
   color: #9698a6;
   font-style: normal; }
 
@@ -42,6 +48,7 @@ ul {
   border: none;
   font-family: 'Public Sans';
   font-size: 18px;
+  line-height: 22px;
   font-weight: 400;
   color: white;
   font-style: normal;
@@ -106,6 +113,7 @@ h1 {
       text-decoration: none;
       font-family: 'Public Sans';
       font-size: 18px;
+      line-height: 22px;
       font-weight: 400;
       color: #2d314d;
       font-style: normal; }
@@ -137,6 +145,8 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
   display: none; }
 
 @media (min-width: 1000px) {
+  .site_header {
+    padding-bottom: 20px; }
   h1 {
     position: unset;
     top: unset; }
@@ -163,20 +173,79 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
     display: block; } }
 
 .mastheader {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  padding-bottom: 100px;
+  padding-top: 400px; }
 
 .mastheader_heading {
   font-family: 'Public Sans';
-  font-size: 2rem;
-  color: #2d314d;
+  font-size: 3rem;
+  line-height: 54px;
+  color: rgba(45, 49, 77, 0.8);
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 500; }
+
+.mastheader_paragraph {
+  padding-top: 30px;
+  padding-bottom: 50px; }
+
+@media (min-width: 1000px) {
+  .mastheader_heading {
+    font-size: 3.5rem;
+    line-height: 64px; } }
 
 .easybank {
-  background-color: #f3f4f6; }
+  background-color: #f3f4f6;
+  padding-top: 70px;
+  padding-bottom: 50px; }
+
+.easybank_paragraph {
+  padding-top: 22px;
+  padding-bottom: 52px; }
+
+.easybank_subheading {
+  padding-top: 22px; }
 
 .articles {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.articles_heading {
+  padding-bottom: 32px; }
+
+.articles_author {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.articles_subheading {
+  padding-bottom: 15px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.articles_paragraph {
+  padding-bottom: 52px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.articles_lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .articles_lists li + li {
+    margin-top: 22px; }
+  .articles_lists li {
+    background-color: #ffffff;
+    margin-left: 22px;
+    margin-right: 22px;
+    text-align: left;
+    border-radius: 0px 0px 10px 10px; }
+    .articles_lists li img {
+      width: 100%;
+      border-radius: 10px 10px 0px 0px; }
 
 footer {
   background-color: seagreen; }

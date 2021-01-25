@@ -12,6 +12,11 @@ body, p, h1, h2, h3, h4, h5, ul {
     padding: 0;
 }
 
+.container {
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
 .mastheader_paragraph, .easybank_paragraph, .articles_paragraph {
     font-family: 'Public Sans';
     font-size: 18px;
@@ -67,4 +72,12 @@ ul {
 
 .request:hover, .request:active {
     opacity: 0.8;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
 }

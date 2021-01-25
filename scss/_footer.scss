@@ -90,3 +90,44 @@ h5 a {
     font-style: normal;
     padding-top: 22px;
 }
+
+@media (min-width: 1000px) {
+    .footer_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 50px);
+        align-self: start;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+        // align-items: center;
+        & h5 {
+            // width: 140px;
+            // align-self: flex-start;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+
+        }
+        & .footer_social_lists {
+            // align-self: flex-end;
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+        & .footer_menu__lists {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-bottom: unset;
+        }
+        & .footer_request {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+        & p {
+            grid-column: 4 / 5;
+            grid-row: 3 / 4; 
+        }
+        & .footer_menu__lists li:nth-child(2) {
+            margin-top: unset;
+        }
+    }
+}

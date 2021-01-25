@@ -1,5 +1,5 @@
 html {
-  font-family: 'Public Sans', serif, sans-serif;
+  font-family: 'Public Sans', Arial, Helvetica, sans-serif;
   font-size: 18px; }
 
 body {
@@ -55,12 +55,8 @@ ul {
   padding: 12px 30px;
   border-radius: 25px; }
 
-h5 {
-  background-image: url("../images/logo.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-  text-indent: -9999px; }
+.request:hover, .request:active {
+  opacity: 0.8; }
 
 .site_header {
   background-color: #ffffff;
@@ -85,7 +81,7 @@ h1 {
   display: block;
   text-indent: -9999px;
   position: absolute;
-  top: 35%; }
+  top: 20%; }
 
 .site_header__label {
   background-image: url("../images/icon-hamburger.svg");
@@ -94,7 +90,7 @@ h1 {
   background-size: 1,5rem;
   display: block;
   position: absolute;
-  top: 35%;
+  top: 20%;
   right: 10%;
   width: 2rem;
   height: 2rem;
@@ -115,8 +111,10 @@ h1 {
       font-size: 18px;
       line-height: 22px;
       font-weight: 400;
-      color: #2d314d;
+      color: #9698a6;
       font-style: normal; }
+    .navigation ul li a:hover {
+      color: #2d314d; }
   .navigation ul li + li {
     padding-top: 20px; }
 
@@ -162,10 +160,6 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
-      .navigation ul li a {
-        color: #9698a6; }
-      .navigation ul li a:hover {
-        color: #2d314d; }
     .navigation ul li + li {
       padding-top: unset;
       margin-left: 50px; }
@@ -174,8 +168,11 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
 
 .mastheader {
   background-color: #fafafa;
-  padding-bottom: 100px;
-  padding-top: 400px; }
+  padding-bottom: 100px; }
+
+.mastheader img {
+  width: 100%;
+  margin-top: -130px; }
 
 .mastheader_heading {
   font-family: 'Public Sans';
@@ -248,4 +245,78 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
       border-radius: 10px 10px 0px 0px; }
 
 footer {
-  background-color: seagreen; }
+  background-color: #2d314d;
+  padding-top: 42px;
+  padding-bottom: 42px; }
+  footer .footer_social_lists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 22px;
+    padding-bottom: 22px; }
+
+h5 a {
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  text-indent: -9999px;
+  filter: brightness(0) invert(1); }
+
+.footer_heading {
+  color: white; }
+
+.footer_social_lists li a {
+  display: block;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px; }
+
+.footer_social_lists li:nth-child(1) a {
+  background-image: url("../images/icon-facebook.svg"); }
+
+.footer_social_lists li:nth-child(2) a {
+  background-image: url("../images/icon-youtube.svg"); }
+
+.footer_social_lists li:nth-child(3) a {
+  background-image: url("../images/icon-twitter.svg"); }
+
+.footer_social_lists li:nth-child(4) a {
+  background-image: url("../images/icon-pinterest.svg"); }
+
+.footer_social_lists li:nth-child(5) a {
+  background-image: url("../images/icon-instagram.svg"); }
+
+.footer_social_lists li a:hover,
+.footer_social_lists li a:active {
+  filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(50deg) saturate(1000%) contrast(1); }
+
+.footer_menu__lists {
+  padding-bottom: 42px; }
+
+.footer_menu__lists li + li {
+  margin-top: 16px; }
+
+.footer_menu__lists li a {
+  text-decoration: none;
+  font-family: 'Public Sans';
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #f3f4f6;
+  font-style: normal; }
+
+.footer_menu__lists li a:hover {
+  color: #31d35c; }
+
+.footer p {
+  color: #f3f4f6;
+  font-family: 'Public Sans';
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 22px; }

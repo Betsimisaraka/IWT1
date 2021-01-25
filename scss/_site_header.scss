@@ -23,7 +23,7 @@ h1 {
     display: block;
     text-indent: -9999px;
     position: absolute;
-    top: 35%;
+    top: 20%;
 }
 
 .site_header__label {
@@ -33,7 +33,7 @@ h1 {
     background-size: 1,5rem;
     display: block;
     position: absolute;
-    top: 35%;
+    top: 20%;
     right: 10%;
     width: 2rem;
     height: 2rem;
@@ -55,8 +55,11 @@ h1 {
             font-size: 18px;
             line-height: 22px;
             font-weight: 400;
-            color: hsl(233, 26%, 24%);
+            color:hsl(233, 8%, 62%);
             font-style: normal;
+        }
+        & a:hover {
+            color: hsl(233, 26%, 24%);
         }
     }
     & ul li + li {
@@ -113,12 +116,6 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            & li a {
-                color:hsl(233, 8%, 62%);
-            }
-            li a:hover {
-                color: hsl(233, 26%, 24%);
-            }
         }
         & ul li + li {
             padding-top: unset;

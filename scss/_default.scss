@@ -1,5 +1,5 @@
 html {
-    font-family: 'Public Sans', serif, sans-serif;
+    font-family: 'Public Sans', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -11,15 +11,6 @@ body, p, h1, h2, h3, h4, h5, ul {
     margin: 0;
     padding: 0;
 }
-
-// body {
-//    margin-left: 22px;
-//    margin-right: 22px;
-// }
-
-// .container {
-    
-// }
 
 .mastheader_paragraph, .easybank_paragraph, .articles_paragraph {
     font-family: 'Public Sans';
@@ -74,10 +65,6 @@ ul {
     border-radius: 25px;
 }
 
-h5 {
-    background-image: url('../images/logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    text-indent: -9999px;
+.request:hover, .request:active {
+    opacity: 0.8;
 }

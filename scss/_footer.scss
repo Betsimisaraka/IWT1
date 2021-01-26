@@ -5,8 +5,8 @@ footer {
     & .footer_social_lists {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
         padding-top: 22px;
         padding-bottom: 22px;
     }
@@ -15,7 +15,7 @@ footer {
 h5 a {
     background-image: url('../images/logo.svg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: start;
     display: block;
     text-indent: -9999px;
     filter: brightness(0) invert(1);
@@ -69,11 +69,12 @@ h5 a {
 
 .footer_menu__lists li a {
     text-decoration: none;
-    font-family: 'Public Sans';
+    // font-family: 'Public Sans';
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    color: hsl(220, 16%, 96%);
+    // color: hsl(233, 8%, 62%);
+    color: hsl(220, 16%, 75%);
     font-style: normal;
 }
 
@@ -82,10 +83,10 @@ h5 a {
 }
 
 .footer p {
-    color: hsl(220, 16%, 96%);
-    font-family: 'Public Sans';
-    font-size: 16px;
-    line-height: 23px;
+    color: hsl(233, 8%, 62%);
+    // font-family: 'Public Sans';
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
     font-style: normal;
     padding-top: 22px;
@@ -97,19 +98,14 @@ h5 a {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 50px);
         align-self: start;
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;
-        // align-items: center;
         & h5 {
-            // width: 140px;
-            // align-self: flex-start;
             grid-column: 1 / 2;
             grid-row: 1 / 2;
+            align-self: center;
 
         }
         & .footer_social_lists {
-            // align-self: flex-end;
+            align-self: end;
             grid-column: 1 / 2;
             grid-row: 3 / 4;
         }
@@ -117,14 +113,20 @@ h5 a {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             padding-bottom: unset;
+            align-self: start;
         }
         & .footer_request {
             grid-column: 4 / 5;
             grid-row: 1 / 2;
+            align-self: center;
+            margin-left: 50px;
         }
         & p {
-            grid-column: 4 / 5;
+            grid-column: 3 / 5;
             grid-row: 3 / 4; 
+            align-self: start;
+            padding-top: unset;
+            margin-left: 240px;
         }
         & .footer_menu__lists li:nth-child(2) {
             margin-top: unset;

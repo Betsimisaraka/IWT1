@@ -206,7 +206,21 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
     padding-right: unset; }
   .mastheader_heading {
     font-size: 3.5rem;
-    line-height: 64px; } }
+    line-height: 64px; }
+  .mastheader_container {
+    display: flex;
+    flex-direction: row-reverse; }
+    .mastheader_container img {
+      width: 500px;
+      position: absolute;
+      top: 20%;
+      left: 60%; }
+  .mastheader_heading__container {
+    text-align: start;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 600px; } }
 
 .easybank {
   background-color: #f3f4f6;
@@ -219,6 +233,20 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
 
 .easybank_subheading {
   padding-top: 22px; }
+
+@media (min-width: 1000px) {
+  .easybank_lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .easybank_lists li {
+      text-align: left; }
+    .easybank_lists li + li {
+      margin-left: 20px; }
+  .easyback_heading_container {
+    text-align: left;
+    max-width: 700px; } }
 
 .articles {
   background-color: #fafafa;
@@ -264,12 +292,19 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
 @media (min-width: 1000px) {
   .articles_lists {
     flex-direction: row;
+    justify-content: space-between;
     align-items: start; }
   .articles_lists li + li {
-    margin-top: unset; }
+    margin-top: unset;
+    margin-left: 20px; }
   .articles_lists li {
     margin-left: unset;
-    margin-right: unset; } }
+    margin-right: unset;
+    height: calc(100vh + 200px); }
+    .articles_lists li img {
+      height: 50vh; }
+  .articles_paragraph {
+    padding-bottom: 32px; } }
 
 footer {
   background-color: #2d314d;

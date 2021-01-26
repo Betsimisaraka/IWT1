@@ -35,4 +35,23 @@
         font-size: 3.5rem;
         line-height: 64px;
     }
+    .mastheader_container {
+        display: flex;
+        flex-direction: row-reverse;
+        // justify-content: space-between;
+        // align-items: flex-start;
+        & img {
+            width: 500px;
+            position: absolute;
+            top: 20%;
+            left: 60%;
+        }
+    }
+    .mastheader_heading__container {
+        text-align: start;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        max-width: 600px;
+    }
 }

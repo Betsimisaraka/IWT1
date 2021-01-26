@@ -12,3 +12,22 @@
 .easybank_subheading {
     padding-top: 22px;
 }
+
+@media (min-width: 1000px) {
+    .easybank_lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        & li {
+            text-align: left;
+        }
+        & li + li {
+            margin-left: 20px;
+        }
+    }
+    .easyback_heading_container {
+        text-align: left;
+        max-width: 700px;
+    }
+}

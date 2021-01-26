@@ -52,6 +52,7 @@
     .articles_lists {
         flex-direction: row;
         // justify-content: center;
+        justify-content: space-between;
         align-items: start;
         // flex-wrap: wrap;
     }
@@ -61,9 +62,17 @@
     
     .articles_lists li + li {
         margin-top: unset;
+        margin-left: 20px;
     }
     .articles_lists li {
         margin-left: unset;
         margin-right: unset;
+        height: calc(100vh + 200px);
+        & img {
+            height: 50vh;
+        }
+    }
+    .articles_paragraph {
+        padding-bottom: 32px;
     }
 }

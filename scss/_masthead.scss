@@ -12,8 +12,8 @@
     margin-top: -110px;
 }
 .mastheader_heading {
-    // font-family: 'Public Sans';
-    font-size: 3rem;
+    font-family: 'Public Sans';
+    font-size: 2.3rem;
     line-height: 54px;
     color: hsla(233, 26%, 24%, 0.8);
     font-style: normal;
@@ -35,7 +35,7 @@
         background-image: url('../images/bg-intro-desktop.svg');
         background-repeat: no-repeat;
         background-size: 85%;
-        background-position: calc(685px - 42px) 96%;
+        background-position: calc(685px - 42px) 88%;
 
     }
     .mastheader_heading {
@@ -57,6 +57,6 @@
         margin-right: auto;
         margin-top: 100px;
         margin-bottom: 100px;
-        max-width: 457px;
+        max-width: 472px;
     }
 }

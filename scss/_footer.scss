@@ -9,6 +9,7 @@ footer {
         justify-content: start;
         padding-top: 22px;
         padding-bottom: 22px;
+        margin-left: 45px;
     }
 }
 
@@ -19,6 +20,7 @@ h5 a {
     display: block;
     text-indent: -9999px;
     filter: brightness(0) invert(1);
+    margin-left: 92px;
 }
 
 .footer_heading {
@@ -69,11 +71,10 @@ h5 a {
 
 .footer_menu__lists li a {
     text-decoration: none;
-    // font-family: 'Public Sans';
+    font-family: 'Public Sans';
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    // color: hsl(233, 8%, 62%);
     color: hsl(220, 16%, 75%);
     font-style: normal;
 }
@@ -84,7 +85,7 @@ h5 a {
 
 .footer p {
     color: hsl(233, 8%, 62%);
-    // font-family: 'Public Sans';
+    font-family: 'Public Sans';
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -102,12 +103,15 @@ h5 a {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
             align-self: center;
-
+            & a {
+                margin-left: unset;
+            }
         }
         & .footer_social_lists {
             align-self: end;
             grid-column: 1 / 2;
             grid-row: 3 / 4;
+            margin-left: unset;
         }
         & .footer_menu__lists {
             display: grid;
@@ -126,7 +130,7 @@ h5 a {
             grid-row: 3 / 4; 
             align-self: start;
             padding-top: unset;
-            margin-left: 240px;
+            margin-left: 233px;
         }
         & .footer_menu__lists li:nth-child(2) {
             margin-top: unset;

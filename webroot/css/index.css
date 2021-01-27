@@ -1,5 +1,23 @@
+@font-face {
+  font-family: "Public Sans";
+  src: local("Public Sans Light"), local("Public-Sans-Light"), url("../fonts/public-sans-light.woff2") format("woff2"), url("../fonts/public-sans-light.woff") format("woff");
+  font-style: "normal";
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Public Sans";
+  src: local("Public Sans Regular"), local("Public-Sans-Regular"), url("../fonts/public-sans-regular.woff2") format("woff2"), url("../fonts/public-sans-regular.woff") format("woff");
+  font-style: "normal";
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Public Sans";
+  src: local("Public Sans Bold"), local("Public-Sans-Bold"), url("../fonts/public-sans-bold.woff2") format("woff2"), url("../fonts/public-sans-bold.woff") format("woff");
+  font-style: "normal";
+  font-weight: 700; }
+
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Public Sans", Arial, Helvetica, sans-serif;
   font-size: 18px; }
 
 body {
@@ -14,6 +32,7 @@ body, p, h1, h2, h3, h4, h5, ul {
   margin-right: 22px; }
 
 .mastheader_paragraph, .easybank_paragraph, .articles_paragraph {
+  font-family: 'Public Sans';
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -21,12 +40,14 @@ body, p, h1, h2, h3, h4, h5, ul {
   font-style: normal; }
 
 h3 {
+  font-family: 'Public Sans';
   font-weight: 500;
   font-size: 2.5rem;
   line-height: 48px;
   color: rgba(45, 49, 77, 0.8); }
 
 h4 {
+  font-family: 'Public Sans';
   font-weight: 500;
   font-size: 32px;
   line-height: 34px;
@@ -37,6 +58,7 @@ ul {
   list-style: none; }
 
 .articles_author {
+  font-family: 'Public Sans';
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -46,6 +68,7 @@ ul {
 .request {
   background-image: linear-gradient(50deg, #31d35c 0%, #2bb7da 100%);
   border: none;
+  font-family: 'Public Sans';
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
@@ -113,6 +136,7 @@ h1 {
     justify-content: space-between; }
     .navigation ul li a {
       text-decoration: none;
+      font-family: 'Public Sans';
       font-size: 18px;
       line-height: 22px;
       font-weight: 400;
@@ -188,7 +212,8 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
   margin-top: -110px; }
 
 .mastheader_heading {
-  font-size: 3rem;
+  font-family: 'Public Sans';
+  font-size: 2.3rem;
   line-height: 54px;
   color: rgba(45, 49, 77, 0.8);
   font-style: normal;
@@ -208,7 +233,7 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
     background-image: url("../images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-size: 85%;
-    background-position: calc(685px - 42px) 96%; }
+    background-position: calc(685px - 42px) 88%; }
   .mastheader_heading {
     font-size: 3.5rem;
     line-height: 64px; }
@@ -225,7 +250,7 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 100px;
-    max-width: 457px; } }
+    max-width: 472px; } }
 
 .easybank {
   background-color: #f3f4f6;
@@ -306,7 +331,7 @@ body > input[type="checkbox"]:checked ~ header .site_header__label {
     margin-right: unset;
     height: calc(100vh + 300px); }
     .articles_lists li img {
-      height: 50vh; }
+      height: calc(50vh); }
   .articles_paragraph {
     padding-bottom: 32px; } }
 
@@ -320,7 +345,8 @@ footer {
     align-items: start;
     justify-content: start;
     padding-top: 22px;
-    padding-bottom: 22px; }
+    padding-bottom: 22px;
+    margin-left: 45px; }
 
 h5 a {
   background-image: url("../images/logo.svg");
@@ -328,7 +354,8 @@ h5 a {
   background-position: start;
   display: block;
   text-indent: -9999px;
-  filter: brightness(0) invert(1); }
+  filter: brightness(0) invert(1);
+  margin-left: 92px; }
 
 .footer_heading {
   color: white; }
@@ -368,6 +395,7 @@ h5 a {
 
 .footer_menu__lists li a {
   text-decoration: none;
+  font-family: 'Public Sans';
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -379,6 +407,7 @@ h5 a {
 
 .footer p {
   color: #9698a6;
+  font-family: 'Public Sans';
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -395,10 +424,13 @@ h5 a {
       grid-column: 1 / 2;
       grid-row: 1 / 2;
       align-self: center; }
+      .footer_container h5 a {
+        margin-left: unset; }
     .footer_container .footer_social_lists {
       align-self: end;
       grid-column: 1 / 2;
-      grid-row: 3 / 4; }
+      grid-row: 3 / 4;
+      margin-left: unset; }
     .footer_container .footer_menu__lists {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -414,6 +446,6 @@ h5 a {
       grid-row: 3 / 4;
       align-self: start;
       padding-top: unset;
-      margin-left: 240px; }
+      margin-left: 233px; }
     .footer_container .footer_menu__lists li:nth-child(2) {
       margin-top: unset; } }

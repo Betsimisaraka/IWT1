@@ -66,9 +66,9 @@
     .articles_lists li {
         margin-left: unset;
         margin-right: unset;
-        height: calc(100vh + 300px);
+        height: calc(100vh - 10px);
         & img {
-            height: calc(50vh);
+            height: calc(50vh - 100px);
         }
     }
     .articles_paragraph {
